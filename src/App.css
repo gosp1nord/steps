@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container-input {
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 400px;
+  justify-content: space-between;
+}
+.container-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 7px;
+  border: 2px solid #a2a2a2;
+  border-radius: 5px;
+  width: 380px;
+  height: 300px;
+  overflow-y: auto;
+}
+.style-date {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #a2a2a2;
+  border-radius: 5px;
+  padding: 0 4px;
+}
+.style-distance {
+  width: 120px;
+  margin-left: 20px;
+  text-align: center;
+  border: 2px solid #a2a2a2;
+  border-radius: 5px;
+}
+.btn-form {
+  display: flex;
+  width: 90px;
+  margin-left: 30px;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  border: 2px solid #a2a2a2;
+  border-radius: 5px;
+  background-color: white;
+}
+.btn-form:hover {
+  background-color: #e7e7e7;
+}
+.error-num {
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.line-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+  align-items: center;
+  font-size: 14px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line-date {
+  display: flex;
+  width: 130px;
+  justify-content: center;
+}
+.line-distance {
+  display: flex;
+  width: 180px;
+  justify-content: center;
+}
+.line-del {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+.dell {
+  color: red;
+  cursor: pointer;
+}
+.edit {
+  content: "\1F58A";
+  margin-right: 6px;
 }
